@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1a1a2e;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  background: #16213e;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input[type="text"], input[type="datetime-local"] {
+  width: 100%;
+}
+
+button {
+  background: #0f3460;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #533483;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #0f3460;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column; /* stack for mobile */
+  gap: 6px;
+}
+
+li span {
+  word-wrap: break-word; /* prevent overflow */
+}
+
+li button {
+  padding: 5px 8px;
+  font-size: 0.9rem;
+  margin-left: 4px;
+}
+
+li div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  input, button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  li {
+    font-size: 0.9rem;
+  }
+}
